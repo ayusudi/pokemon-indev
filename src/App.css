@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 72px;
+  background: #2b092e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Righteous, cursive;
+}
+
+nav ul,
+nav ul li,
+nav ul li a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  gap: 12px;
+  margin: 0 10px;
+  font-size: 14pt;
+}
+
+.home {
+  background-image: url(https://hbomax-images.warnermediacdn.com/images/GXadUQAL-FZaVkgEAAAKm/tileburnedin?size=1280x720&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=1200);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 70px);
+}
+
+.content {
+  background-image: url(https://i.pinimg.com/originals/42/24/45/422445bc3c120c3b2ebb623ed910614f.jpg);
+}
+
+.title {
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 42pt;
+  text-shadow: rgb(25, 4, 31) 2px 0 40px;
+  padding: 50px;
+}
+
+.pokemons {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #2b092e;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  margin: auto;
+  padding: 50px 0;
+  width: 1040px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 220px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  outline: 2px dotted rgb(123, 68, 113);
+  outline-offset: -8px;
+}
+
+.card img {
+  height: 150px;
+  object-fit: contain;
+  margin: 16px;
+}
+
+.card h3 {
+  text-align: center;
+  font-family: Righteous, cursive;
+  margin: 10px;
+}
+
+.box {
+  height: 450px;
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.detail {
+  padding: 10vh 0;
+}
+
+.cbox.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cbox {
+  padding: 28px;
+  height: 370px;
+}
