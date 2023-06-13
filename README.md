@@ -4,7 +4,10 @@
 - Installation ➡️ https://reactrouter.com
 - Open Tutorial in Documentation
 - Configure React Router JSX vs Array of Object
-- Programmatic Navigation
+- Navigation
+  - Link
+  - NavLink
+  - useNavigate (custom hooks) ➡️ Programmatic Navigation
 - Reading URL params
 - Protected routes
 - Nested routes
