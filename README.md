@@ -1,13 +1,12 @@
 # React Router
 
 ## 🦊 Agenda
-- Installation
-- Configuring Routes
+- Installation ➡️ https://reactrouter.com
+- Open Tutorial in Documentation
 - Configure React Router JSX vs Array of Object
-- Navigation
 - Programmatic Navigation
 - Reading URL params
-- Nested routes
 - Protected routes
+- Nested routes
 
 ## 🦊 Conclusion
