@@ -1,10 +1,14 @@
+import { Link, NavLink } from "react-router-dom"
 export default function NavBar() {
   return (
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/pokemons" >Pokemons</a></li>
-        <li><a href="/detail">Detail Ivysaur</a></li>
+        <NavLink to="/" className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+        }>Home</NavLink>
+        <NavLink to="/pokemons" className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+        }>Pokemons</NavLink>
       </ul>
     </nav>
   )
