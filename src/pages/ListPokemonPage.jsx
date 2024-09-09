@@ -47,7 +47,7 @@ export default function ListPokemon(props) {
   useEffect(() => {
     async function fetchPokemon() {
       try {
-        let response = await fetch("http://localhost:3000/pokemons")
+        let response = await fetch("https://raw.githubusercontent.com/ayusudi/pokemon-indev/main/data.json")
         let data = await response.json()
         setPokemons(data)
       } catch (error) {
