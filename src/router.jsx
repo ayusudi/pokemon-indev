@@ -14,12 +14,12 @@ const router = createBrowserRouter([
     element: <App />,
     loader: () => {
       let token = localStorage.getItem("access_token")
-      if (!token){
+      if (!token) {
         return redirect("/verify")
       }
       return null
     },
-    children : [
+    children: [
       {
         path: "/",
         element: <LandingPage />
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <ListPokemonPage />
       },
       {
-        path: "/pokemons/:id/detail",
+        path: "/pokemons/:id",
         element: <DetailPokemon />
       }
     ]
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     path: "/verify",
     element: <StartPage />,
     loader: () => {
-      if (localStorage.getItem("access_token")){
+      if (localStorage.getItem("access_token")) {
         return redirect("/pokemons")
       }
       return null

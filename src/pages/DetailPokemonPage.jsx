@@ -9,9 +9,10 @@ export default function DetailPokemon() {
   useEffect(() => {
     async function fetchDetailPokemon() {
       try {
-        let url = `http://localhost:3000/pokemons/${id}`
+        let url = `https://raw.githubusercontent.com/ayusudi/pokemon-indev/main/data.json`
         let respose = await fetch(url)
-        let data = await respose.json()
+        let pokemons = await respose.json()
+        let data = pokemons.find(el => el.id == id)
         setPokemon(data)
         setIsLoading(false)
       } catch (error) {
@@ -22,7 +23,7 @@ export default function DetailPokemon() {
   }, [])
 
   if (isLoading) {
-    return <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" />
+    return <img src="https://cdn.dribbble.com/users/2105727/screenshots/4254712/getting_ready.gif" />
   } else {
     return (
       <section className="content detail">
