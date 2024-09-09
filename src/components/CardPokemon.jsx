@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function CardPokemon({ pokemon }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    let url = `/pokemons/${pokemon.id}/detail`
+    let url = `/pokemons/${pokemon.id}`
     navigate(url)
   }
   return (
