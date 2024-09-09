@@ -15,6 +15,7 @@ nav {
 
 nav ul,
 nav ul li,
+nav ul a,
 nav ul li a {
   display: flex;
   color: white;
@@ -29,10 +30,13 @@ nav ul li a {
   background-image: url(https://hbomax-images.warnermediacdn.com/images/GXadUQAL-FZaVkgEAAAKm/tileburnedin?size=1280x720&format=jpeg&partner=hbomaxcom&productCode=hbomax&host=artist.api.cdn.hbo.com&w=1200);
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  width: 100vw;
 }
 
 .content {
+  width: 100vw;
+  min-height: calc(100vh - 70px);
   background-image: url(https://i.pinimg.com/originals/42/24/45/422445bc3c120c3b2ebb623ed910614f.jpg);
 }
 
@@ -114,4 +118,8 @@ nav ul li a {
 .cbox {
   padding: 28px;
   height: 370px;
+}
+
+.active {
+  color: rgb(227, 156, 227);
 }
